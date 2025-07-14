@@ -9,13 +9,13 @@ public class Main {
             String categoryProductMain = "";
             String descriptionProductionMain = "";
 
-            double priceProductMain = 0.0;
+            Double priceProductMain = 0.0;
 
             Product product = new Product(nameProductMain, categoryProductMain, descriptionProductionMain, priceProductMain);
 
             Scanner scanner = new Scanner(System.in);
 
-            System.out.println("Quel est le nom de votre produit ? ");
+           /* System.out.println("Quel est le nom de votre produit ? ");
             nameProductMain = scanner.nextLine();
 
             // Faire un enum des catégories
@@ -24,11 +24,17 @@ public class Main {
 
             // Rendre obligatoire un nombre minimum de caractère
             System.out.println("Entrez une descripion de votre produit ");
-            descriptionProductionMain = scanner.nextLine();
+            descriptionProductionMain = scanner.nextLine();*/
 
             // Contraindre le prix selon le type d'enchère
-            System.out.println("Entrez le prix de votre produit ");
-            priceProductMain = scanner.nextDouble();
+
+                    System.out.print("Entrez le prix de votre produit ");
+                    priceProductMain = scanner.nextDouble();
+
+                    try {
+                        double valeur = Double.parseDouble(priceProductMain);
+                    }
+
 
 
         }
